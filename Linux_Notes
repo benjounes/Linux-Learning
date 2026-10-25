@@ -1,0 +1,61 @@
+Linux Learning Notes
+
+1. Introduction
+
+I am learning Linux using Ubuntu on WSL 2 as preparation for VLSI design and verification.
+
+2. Commands Practiced
+
+System Information
+
+Command| Purpose
+"uname -a"| Displays system and kernel information
+"whoami"| Displays the current username
+"history"| Shows previously executed commands
+
+Directory Navigation
+
+Command| Purpose
+"pwd"| Displays the current directory
+"ls"| Lists files and directories
+"cd"| Changes the current directory
+"mkdir"| Creates a directory
+
+File Management
+
+Command| Purpose
+"touch filename"| Creates an empty file
+"cat filename"| Displays file contents
+"echo "text" > filename"| Writes text to a file, replacing existing content
+"echo "text" >> filename"| Writes text to a file, appendint to the end of existing content
+"mv old.txt new.txt"| Moves or renames a file
+"rm filename"| Removes a file
+
+Text Editors
+
+Command| Purpose
+"vi filename"| Opens a file in the Vi editor
+"nano filename"| Opens a file in the Nano editor
+
+Editor Shortcuts
+
+Shortcut| Purpose
+"Ctrl + Shift + C"| Copies selected text in a terminal
+"Ctrl + Shift + V"| Pastes text into a terminal
+
+
+
+3. File Redirection
+
+- ">" writes output to a file, replacing existing content.
+- ">>" appends output to a file.
+
+Example:
+
+echo "Learning Linux" > notes.txt
+echo "Learning for VLSI" >> notes.txt
+cat notes.txt
+
+4. Learning Goal
+
+Build Linux fundamentals before progressing to Verilog, digital design, and VLSI tools.
