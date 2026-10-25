@@ -1,34 +1,38 @@
-# Linux-Learning
-My Linux learning journey — practicing basic commands, file management, directory navigation, and essential Linux skills for VLSI development.
-Topics I'm Learning
+Welcome to my Linux learning repository!
 
-- Basic Linux commands
-- File and directory management
-- Navigating the Linux terminal
-- File creation and editing
-- Linux commands for future VLSI workflows
+I am a second-year Electronics Engineering student specializing in VLSI at PSG iTech. This repository documents my journey of learning Linux using Ubuntu on WSL 2, building a strong foundation for VLSI design and verification.
 
-Commands Practiced
+🎯 Objectives
 
-uname - a = tells OS version
-whoami = tells username
-history = tells command history
-vi filename = creates file in vi editor
-nano filename = creates file in nano editor
-rm filename = to remove file in directory
-ctrl+shift+c = to copy in vi editor
-ctrl+shift+v = to paste in vi editor
-mv filename filename = cut or rename 1st file to second file
-echo = to write in a file using " " > filename
-touch = to create an empty file
-cat = to tell the content in the file
-mkdir = create directory
-cd = enters a directory or file
-ls = tells all files or folder
-pwd =  tells current directory
+- Learn Linux fundamentals and terminal commands.
+- Understand file and directory management.
+- Practice Linux commands through hands-on exercises.
+- Build a foundation for Verilog and VLSI development tools.
 
-Goal
+📚 Topics Covered
 
-Build strong Linux fundamentals before moving on to Verilog and VLSI design tools.
+-  Basic Linux commands
+-  Directory navigation
+-  Creating and listing files
+-  Reading and writing files
+-  File permissions
+-  Searching and filtering
+-  Shell scripting
+-  Linux tools for VLSI workflows
 
-This repository documents my learning progress through practice and small exercises.
+
+📁 Repository Contents
+
+- "README.md" — Project overview and learning progress.
+- "linux_notes.md" — Detailed notes and command examples.
+- "practice/" — Hands-on exercises and practice files (to be added).
+
+🚀 Future Goals
+
+- Become comfortable with Linux.
+- Learn Git and GitHub workflows.
+- Start learning Verilog HDL.
+- Practice digital design and VLSI-related projects.
+
+
+Status: Learning in progress
