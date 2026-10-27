@@ -1,5 +1,9 @@
 Linux Learning Notes
 
+
+DAY 1
+
+
 1. Introduction
 
 I am learning Linux using Ubuntu on WSL 2 as preparation for VLSI design and verification.
@@ -59,3 +63,147 @@ cat notes.txt
 4. Learning Goal
 
 Build Linux fundamentals before progressing to Verilog, digital design, and VLSI tools.
+
+Day 2 — File Management and Text Processing
+
+1. Listing Files
+
+- "cd ~" — Navigate to the home directory.
+- "cd -" — Return to the previous working directory.
+- "ls -la" — List all files, including hidden files, with details.
+- "ls .bash*" — List names matching the ".bash*" pattern.
+- "ls *.py" — List files ending in ".py".
+
+2. Removing Files and Directories
+
+- "rm filename" — Remove a file.
+- "rm -r directory" — Remove a directory and its contents.
+
+Caution: Check the filename and path before using "rm -r".
+
+3. Hard Links and Symbolic Links
+
+Hard link:
+
+ln original.txt hardlink.txt
+
+Creates another directory entry referring to the same file data.
+
+Symbolic link:
+
+ln -s original.txt symlink.txt
+
+Creates a link pointing to another path.
+
+4. Aliases
+
+An alias creates a shortcut for a command.
+
+alias ll='ls -la'
+
+Run "ll" to use the shortcut in your current shell.
+
+5. Counting Text
+
+- "wc -l file.txt" — Count lines.
+- "wc -w file.txt" — Count words.
+- "wc -c file.txt" — Count bytes.
+
+6. Sorting Text
+
+- "sort file.txt" — Sort lines.
+- "sort -r file.txt" — Sort in reverse order.
+- "sort -n numbers.txt" — Sort numerically.
+
+7. Viewing Text
+
+- "head file.txt" — Display the first 10 lines by default.
+- "head -n 5 file.txt" — Display the first 5 lines.
+- "tail file.txt" — Display the last 10 lines by default.
+- "tail -n 5 file.txt" — Display the last 5 lines.
+
+8. Searching Text with grep
+
+- "grep "word" file.txt" — Find lines containing a pattern.
+- "grep -i "word" file.txt" — Search without case sensitivity.
+- "grep -v "word" file.txt" — Display lines that do not match.
+- "grep "word" *.txt" — Search matching text in ".txt" files.
+
+---
+
+Day 3 — Processes, Storage and Networking
+
+1. Process Management
+
+- "top" — Monitor running processes interactively. Press "q" to exit.
+- "ps" — Display process information.
+- "ps aux" — Display detailed information about running processes.
+
+2. Running Commands in the Background
+
+nohup command > output.log 2>&1 &
+
+- "nohup" — Helps a command continue after terminal logout.
+- ">" — Redirects output to a file.
+- "2>&1" — Redirects error output to the same destination.
+- "&" — Starts the command in the background.
+
+Replace "command" with the program you want to run.
+
+3. Storage and Memory
+
+- "df -h" — Show filesystem disk space.
+- "free -h" — Show memory usage.
+
+The "-h" option displays sizes in human-readable units.
+
+4. Downloading Files
+
+wget "URL"
+
+Downloads a file from a URL. Replace "URL" with the actual download address.
+
+5. ZIP Compression
+
+zip archive.zip file.txt
+unzip archive.zip
+
+- "zip" — Creates a ZIP archive.
+- "unzip" — Extracts a ZIP archive.
+
+6. TAR Archives
+
+tar -czvf archive.tar.gz folder/
+tar -xzvf archive.tar.gz
+
+- "-c" — Create an archive.
+- "-x" — Extract an archive.
+- "-z" — Use gzip compression.
+- "-v" — Display processed files.
+- "-f" — Specify the archive filename.
+
+7. Remote Connections
+
+SSH:
+
+ssh username@hostname
+
+Connects securely to a remote computer.
+
+SCP:
+
+scp file.txt username@hostname:/path/
+
+Copies a file securely to a remote computer.
+
+These require an accessible remote computer and suitable authentication.
+
+8. Network Information
+
+ifconfig
+
+Displays network interface information if the utility is installed. On modern Linux systems, "ip addr" is a common alternative.
+
+
+Goal: Build strong Linux fundamentals before progressing to Verilog HDL and VLSI design tools
+
